@@ -26,9 +26,9 @@ A community-driven cat token built around innocence, community, and a long-term 
 
 `index.html` + `styles.css` is a static site (no build step). Open `index.html` in a browser, or deploy the folder to any static host.
 
-- Chain, coin, DEX name and the Buy Now link are set in one place: the `ICAT` object at the bottom of `index.html`. They currently say BNB Smart Chain / PancakeSwap and must be confirmed.
-- Generated art lives in `assets/raw/`. Run `python3 scripts/process_images.py` to rebuild `assets/img/` (it cuts out the sky-blue background on the stickers).
-- The raw art is currently low-resolution previews; replace the files in `assets/raw/` with the full-size versions and re-run the script.
+- Design: black-and-gold badge look taken from the logo. Paw-print patterns, halos, the ribbon and icons are drawn in CSS/SVG, so no background images are needed.
+- Image slots are marked with `<!-- IMAGE SLOT -->` comments in `index.html` (hero character, story image, community image). They show the logo until the real images arrive.
+- The contract address and the Buy link are set once in the `ICAT` object at the bottom of `index.html`.
 
 ## Project materials
 
