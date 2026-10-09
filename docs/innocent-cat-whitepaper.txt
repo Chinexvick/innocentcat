@@ -1,0 +1,370 @@
+INNOCENT CAT • $ICAT • WHITE PAPER
+
+
+
+
+                             INNOCENT CAT
+                                                      $ICAT
+
+                                Professional Project White Paper
+
+
+          A community-driven cat token built around innocence, community,
+              and a long-term vision for meaningful charitable impact.
+
+
+
+    Token                        Innocent Cat ($ICAT)
+
+    Total Supply                 100,000,000 ICAT
+
+    Buy Tax                      3%
+
+    Sell Tax                     3%
+
+    Contract Address             0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF
+
+    Document Version             1.0 — October 2026
+
+
+
+ Important: This white paper describes the project's current concept, token parameters, and intended direction. It is
+ not a promise of profit or a guarantee of future performance. Technical, legal, and contract details should be
+
+
+
+                                                                                                                 Page 1
+INNOCENT CAT • $ICAT • WHITE PAPER
+
+
+
+ independently verified before publication or investment.
+
+
+
+
+                                                            Page 2
+INNOCENT CAT • $ICAT • WHITE PAPER
+
+
+
+
+ Contents
+ 1. Executive Summary
+ 2. The Innocent Cat Story
+ 3. Mission & Vision
+ 4. The Problem
+ 5. The Innocent Cat Approach
+ 6. Charity & Social Impact Vision
+ 7. Token Utility
+ 8. Tokenomics
+ 9. Tax Structure
+ 10. Contract & Technical Information
+ 11. Community & Growth Strategy
+ 12. Roadmap
+ 13. Transparency & Security Principles
+ 14. Risk Factors
+ 15. Conclusion
+
+ This document follows a conventional crypto white-paper structure covering mission, problem, solution, tokenomics,
+ utility, roadmap, transparency, and risks. cite-style removed from PDF
+
+
+
+
+                                                                                                              Page 3
+INNOCENT CAT • $ICAT • WHITE PAPER
+
+
+
+
+ 1. Executive Summary
+ Innocent Cat ($ICAT) is a community-oriented crypto token built around a simple identity:
+ innocence, compassion, community, and the belief that a digital community can eventually create
+ positive real-world impact.
+
+ The project combines the cultural and community appeal of a cat-themed token with a longer-term
+ social-impact vision. A central part of that vision is charity, particularly support for orphanages and
+ people who need practical assistance.
+
+ The project's stated total supply is 100,000,000 ICAT, with a 3% buy tax and 3% sell tax. The
+ contract address supplied for the project is listed in Section 10.
+
+ Innocent Cat is designed to grow through community participation, transparent communication,
+ responsible development, and the gradual expansion of its social-impact ambitions.
+
+
+ 2. The Innocent Cat Story
+ Innocent Cat is inspired by a personal story of resilience. The project's origin story centers on a
+ developer who grew up without a father or mother and chose to build something that could
+ eventually become a vehicle for helping others.
+
+ The name Innocent Cat represents more than a visual brand. It is intended to symbolize
+ vulnerability, simplicity, kindness, and the idea that people who have experienced hardship can
+ still create something meaningful for others.
+
+ The project's long-term charitable direction includes supporting orphanages and helping
+ vulnerable people. The intention is to make social impact part of the project's identity rather than
+ treating charity as a short-term promotional campaign.
+
+            “From an innocent beginning to a community with a purpose.”
+
+ 3. Mission & Vision
+ Mission: To build a recognizable and engaged digital community around Innocent Cat while
+ creating a credible path toward real-world charitable impact.
+
+ Vision: To develop Innocent Cat into a community-led ecosystem where the token, its brand, and
+ its future initiatives can connect people, creativity, and charitable action.
+
+ The project is intentionally designed around a long-term mindset. Growth is expected to come
+ from community building, responsible development, partnerships, visibility, and useful initiatives
+ rather than promises of guaranteed returns.
+
+
+ 4. The Problem
+ Many meme and community tokens are built primarily around attention and short-term
+ speculation. While community culture can be powerful, a project can struggle to maintain a
+ meaningful identity if there is no broader purpose.
+
+ At the same time, many charitable causes lack consistent visibility, funding, and community
+ participation. Orphanages and vulnerable families often need practical support that goes beyond
+ awareness.
+
+
+
+                                                                                                   Page 4
+INNOCENT CAT • $ICAT • WHITE PAPER
+
+
+
+
+ Innocent Cat aims to address this gap by combining a recognizable community brand with a
+ long-term social-impact narrative. The project does not claim that a token alone can solve social
+ problems; instead, it seeks to use its growing community as a potential channel for future
+ charitable initiatives.
+
+
+ 5. The Innocent Cat Approach
+ Community first: Build an active, respectful, and engaged community around the Innocent Cat
+ identity.
+
+ Transparency: Communicate token parameters, project developments, and major decisions
+ clearly.
+
+ Long-term development: Focus on sustainable initiatives rather than relying solely on short-term
+ market hype.
+
+ Social impact: Develop practical charity initiatives as resources and operational capacity grow.
+
+ Responsible communication: Avoid guaranteed-return claims and encourage users to make
+ independent decisions.
+
+
+ 6. Charity & Social Impact Vision
+ Charity is one of the defining long-term goals of Innocent Cat. The project's initial social-impact
+ direction is focused on orphanages and vulnerable people.
+
+ Potential future initiatives may include donations to orphanages, provision of food and essential
+ supplies, support for education, medical assistance, and other practical forms of help. Specific
+ programs, beneficiaries, budgets, and schedules will depend on available resources and future
+ project development.
+
+ The project will aim to make charitable activities visible and accountable through appropriate
+ records, community communication, and evidence of completed initiatives where privacy and
+ safeguarding considerations permit.
+
+ Important: No fixed percentage of token tax is assigned to charity in the information currently
+ provided for this white paper. Future charity funding should therefore be treated as a project
+ objective, not as an automatic contractual entitlement of token holders.
+
+
+ 7. Token Utility
+ At its current stage, $ICAT functions primarily as a community and ecosystem token. Its
+ immediate utility is centered on participation in the Innocent Cat community, brand ecosystem,
+ campaigns, and future project initiatives.
+
+ As the project develops, potential utility areas may include:
+
+ • Community campaigns, events, contests, and engagement initiatives.
+
+ • Access or participation in selected future Innocent Cat ecosystem activities.
+
+ • Community-driven charitable initiatives and fundraising campaigns where applicable.
+
+ • Partnership and promotional programs developed around the Innocent Cat brand.
+
+ • Potential future digital products or services, subject to feasibility and development.
+
+
+                                                                                                    Page 5
+INNOCENT CAT • $ICAT • WHITE PAPER
+
+
+
+ Future utilities are proposals, not guarantees. Any utility that requires additional smart-contract functionality,
+ third-party integrations, or regulatory approval will only be introduced after appropriate technical and operational
+ review.
+
+
+ 8. Tokenomics
+ The current token parameters supplied for this white paper are intentionally simple and
+ transparent.
+
+    Parameter                              Current Specification
+
+    Project                                Innocent Cat
+
+    Ticker                                 $ICAT
+
+    Total Supply                           100,000,000 ICAT
+
+    Buy Tax                                3%
+
+    Sell Tax                               3%
+
+    Contract Address                       0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF
+
+
+ No additional allocations, vesting schedules, burn schedules, staking rewards, or treasury percentages are stated in
+ this white paper because those figures were not provided as confirmed project parameters. They should be added
+ only when verified.
+
+
+ 9. Tax Structure
+ Innocent Cat currently specifies a 3% buy tax and 3% sell tax.
+
+ A transaction tax can be used by a token's smart contract to fund designated ecosystem activities,
+ but the exact destination of the tax must be defined by the contract and verified on-chain.
+ Because no tax allocation breakdown was supplied, this white paper does not claim that a
+ particular percentage goes to liquidity, marketing, development, charity, or another wallet.
+
+ The project's commitment is to communicate any confirmed tax allocation clearly and to avoid
+ presenting unverified wallet usage as fact.
+
+
+ 10. Contract & Technical Information
+ Contract Address: 0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF
+
+ The address uses the common EVM-style hexadecimal format. The exact deployment network
+ should be confirmed from the official project channels and block explorer before publication of a
+ final technical specification.
+
+ Before relying on the token, users should independently verify the contract address, ownership
+ status, liquidity status, tax behavior, trading restrictions, and other smart-contract parameters on
+ the relevant blockchain explorer.
+
+ A future technical appendix can document the contract source code, verified deployment,
+ administrative privileges, liquidity arrangements, and audit status if those details become
+ available.
+
+
+
+
+                                                                                                                   Page 6
+INNOCENT CAT • $ICAT • WHITE PAPER
+
+
+
+
+ 11. Community & Growth Strategy
+ The Innocent Cat community is expected to be the foundation of the project. Growth should
+ prioritize genuine participation, consistent communication, and a recognizable brand.
+
+ Community development: Telegram, X, community campaigns, educational content, spaces, and
+ other social channels can be used to strengthen participation.
+
+ Brand development: The Innocent Cat visual identity can support digital content, merchandise
+ concepts, community events, partnerships, and future ecosystem products.
+
+ Partnerships: The project may pursue collaborations with creators, communities, charitable
+ organizations, and Web3 projects where the relationship provides genuine value.
+
+ Organic growth: The project should favor sustainable awareness and community retention over
+ artificial engagement or misleading promotion.
+
+
+ 12. Roadmap
+ The roadmap below is a forward-looking framework. Dates and deliverables may change as the
+ project develops.
+
+    Phase            Focus                   Objectives
+
+    Phase 1          Launch & Foundation     Token launch, community formation, official branding, social channels, and transparent project inform
+
+    Phase 2          Community Growth        Community campaigns, content, X Spaces, partnerships, visibility initiatives, and stronger community
+
+    Phase 3          Ecosystem Development   Explore practical digital/community utilities, partnerships, and additional Innocent Cat ecosystem initi
+
+    Phase 4          Charity Activation      Develop and execute structured charitable initiatives, beginning with orphanage-focused support whe
+
+    Phase 5          Long-Term Expansion     Scale the community, strengthen partnerships, expand social-impact programs, and evaluate addition
+
+
+
+ 13. Transparency & Security Principles
+ Innocent Cat's long-term credibility should be built on verifiable information. The project intends to
+ prioritize:
+
+ • Clear publication of the official contract address.
+
+ • Consistent disclosure of material project changes.
+
+ • Independent verification of contract and liquidity information where available.
+
+ • Clear distinction between current features and future plans.
+
+ • No guaranteed profit or fixed-return promises.
+
+ • Public communication around charitable initiatives and major ecosystem developments.
+
+
+ 14. Risk Factors
+ Digital assets are highly volatile and may lose substantial or all of their value. A white paper does
+ not remove market, technical, operational, regulatory, or liquidity risks.
+
+ Key risks include market volatility, low liquidity, smart-contract vulnerabilities, changes to
+ blockchain infrastructure, taxation or regulatory developments, community participation,
+
+
+                                                                                                                 Page 7
+INNOCENT CAT • $ICAT • WHITE PAPER
+
+
+
+
+ competition, cybersecurity incidents, and failure to execute planned initiatives.
+
+ The charity vision also carries operational risks: donations may be limited by available resources,
+ logistics, legal requirements, beneficiary verification, and safeguarding considerations.
+
+ Nothing in this document should be interpreted as financial advice, a guarantee of returns, or a
+ promise that any roadmap milestone will be completed.
+
+
+ 15. Conclusion
+ Innocent Cat ($ICAT) is built around a simple but ambitious idea: a community can be more
+ meaningful when it has a purpose beyond speculation.
+
+ With a total supply of 100 million tokens, a 3% buy tax, a 3% sell tax, and a clear community
+ identity, Innocent Cat seeks to establish a foundation for long-term development. Its most
+ distinctive future ambition is to turn community growth into practical charitable impact, with
+ orphanages and vulnerable people at the center of that vision.
+
+ The project's success will ultimately depend on execution, transparency, community participation,
+ responsible development, and the ability to turn its stated vision into verifiable actions.
+
+
+
+
+                          Innocent Cat — Innocence with a Purpose.
+
+ Official Contract Address: 0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF
+
+ © 2026 Innocent Cat Community. This document is a project information document and may be updated as the
+ project evolves.
+
+
+
+
+                                                                                                            Page 8
+
