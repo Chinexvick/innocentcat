@@ -22,6 +22,14 @@ A community-driven cat token built around innocence, community, and a long-term 
 - X (Twitter): https://x.com/Innocentcat224
 - Telegram: https://t.me/inncat
 
+## Website
+
+`index.html` + `styles.css` is a static site (no build step). Open `index.html` in a browser, or deploy the folder to any static host.
+
+- Chain, coin, DEX name and the Buy Now link are set in one place: the `ICAT` object at the bottom of `index.html`. They currently say BNB Smart Chain / PancakeSwap and must be confirmed.
+- Generated art lives in `assets/raw/`. Run `python3 scripts/process_images.py` to rebuild `assets/img/` (it cuts out the sky-blue background on the stickers).
+- The raw art is currently low-resolution previews; replace the files in `assets/raw/` with the full-size versions and re-run the script.
+
 ## Project materials
 
 - `docs/innocent-cat-whitepaper.pdf`: white paper v1.0 (October 2026, 8 pages)
