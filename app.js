@@ -4,7 +4,12 @@
   // Project settings: change these in one place once the chain and buy link are confirmed.
   const ICAT = {
     contract: "0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF",
-    buyUrl: "#how-to-buy",
+    chain: "BNB Smart Chain",
+  };
+  ICAT.links = {
+    buy: `https://pancakeswap.finance/swap?chain=bsc&outputCurrency=${ICAT.contract}`,
+    chart: `https://dexscreener.com/bsc/${ICAT.contract}`,
+    explorer: `https://bscscan.com/token/${ICAT.contract}`,
   };
 
   const root = document.documentElement;
@@ -15,7 +20,12 @@
 
   /* ---------- content config ---------- */
   $$("[data-ca]").forEach((el) => (el.textContent = ICAT.contract));
-  $$("[data-buy-link]").forEach((a) => (a.href = ICAT.buyUrl));
+  // [data-link="buy|chart|explorer"] anchors open the matching external page in a new tab.
+  $$("[data-link]").forEach((a) => {
+    a.href = ICAT.links[a.dataset.link];
+    a.target = "_blank";
+    a.rel = "noopener";
+  });
 
   $$("[data-copy]").forEach((btn) =>
     btn.addEventListener("click", async () => {

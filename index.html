@@ -7,7 +7,7 @@
 <meta name="description" content="Innocent Cat ($ICAT): a community-driven cat token built around innocence, compassion and a long-term vision for charitable impact.">
 <meta name="theme-color" content="#12100c">
 <meta property="og:title" content="Innocent Cat ($ICAT)">
-<meta property="og:description" content="Innocence with a Purpose. A community cat token with a charity heart.">
+<meta property="og:description" content="Innocence with a Purpose. A community cat token on BNB Chain with a charity heart.">
 <meta property="og:image" content="assets/img/cat-hero.webp">
 <link rel="icon" href="assets/img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +29,7 @@
     <symbol id="crown" viewBox="0 0 64 48">
       <path d="M4 40 8 10l14 16L32 4l10 22 14-16 4 30z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
     </symbol>
+    <symbol id="bnb" viewBox="0 0 32 32"><path d="M16 4l3.2 3.2-7.6 7.6-3.2-3.2zM20.8 8.8 24 12l-12.8 12.8L8 21.6zM11.2 8.8l3.2 3.2-3.2 3.2L8 12zM16 13.6l3.2 3.2-3.2 3.2-3.2-3.2zM28 16l-3.2 3.2-3.2-3.2 3.2-3.2zM7.2 12.8l3.2 3.2-3.2 3.2L4 16zM24 20l-8 8-3.2-3.2 8-8z"/></symbol>
     <symbol id="spark" viewBox="0 0 24 24"><path d="M12 0c1 7 5 11 12 12-7 1-11 5-12 12-1-7-5-11-12-12 7-1 11-5 12-12z"/></symbol>
     <symbol id="tg" viewBox="0 0 24 24"><path d="M21.5 4.2 2.9 11.4c-1.2.5-1.2 1.2-.2 1.5l4.7 1.5 1.8 5.6c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.3-2.2 4.7 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.3-1.5zM9.6 14.4l-.4 4-1.4-4.6 10.9-6.9-9.1 7.5z"/></symbol>
     <symbol id="x" viewBox="0 0 24 24"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.3L5.3 21H2.2l7.2-8.3L1.9 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></symbol>
@@ -53,7 +54,7 @@
     <a href="#how-to-buy">How to buy</a>
     <a href="#roadmap">Roadmap</a>
   </nav>
-  <a class="btn btn--gold btn--sm magnetic" data-buy-link href="#how-to-buy">Buy $ICAT</a>
+  <a class="btn btn--gold btn--sm magnetic" data-link="buy" href="https://pancakeswap.finance/swap?chain=bsc&amp;outputCurrency=0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF">Buy $ICAT</a>
 </header>
 
 <main id="top">
@@ -72,12 +73,17 @@
         <p class="hero__tag hero-in">Innocence with a Purpose.</p>
         <p class="hero__lede hero-in">A community-driven cat token built around innocence, compassion and community, with a long-term vision for real charitable impact, starting with orphanages and people who need practical help.</p>
         <div class="hero__ctas hero-in">
-          <a class="btn btn--gold magnetic" data-buy-link href="#how-to-buy">Buy $ICAT</a>
+          <a class="btn btn--gold magnetic" data-link="buy" href="https://pancakeswap.finance/swap?chain=bsc&amp;outputCurrency=0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF">Buy $ICAT</a>
           <a class="btn btn--ghost magnetic" href="https://t.me/inncat" target="_blank" rel="noopener"><svg class="btn__ico"><use href="#tg"/></svg>Join Telegram</a>
         </div>
         <button class="ca hero-in" type="button" data-copy aria-label="Copy contract address">
           <span class="ca__label">CA</span><span class="ca__addr" data-ca></span><span class="ca__act">Copy</span>
         </button>
+        <div class="quick hero-in">
+          <span class="quick__chain"><svg><use href="#bnb"/></svg>BNB Chain</span>
+          <a data-link="chart" href="https://dexscreener.com/bsc/0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF">DexScreener</a>
+          <a data-link="explorer" href="https://bscscan.com/token/0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF">BscScan</a>
+        </div>
       </div>
       <div class="hero__art" data-hero-art>
         <div class="halo" aria-hidden="true"><i></i><i></i><i></i></div>
@@ -98,8 +104,8 @@
       <span>Innocence with a purpose</span><svg><use href="#paw"/></svg><span>$ICAT</span><svg><use href="#paw"/></svg><span>Community first</span><svg><use href="#paw"/></svg><span>Charity at heart</span><svg><use href="#paw"/></svg>
     </div></div>
     <div class="ribbon ribbon--b"><div class="ribbon__track" data-marquee="-1">
-      <span>Meow to the moon</span><svg><use href="#spark"/></svg><span>100,000,000 ICAT</span><svg><use href="#spark"/></svg><span>3% buy · 3% sell</span><svg><use href="#spark"/></svg><span>Join the pack</span><svg><use href="#spark"/></svg>
-      <span>Meow to the moon</span><svg><use href="#spark"/></svg><span>100,000,000 ICAT</span><svg><use href="#spark"/></svg><span>3% buy · 3% sell</span><svg><use href="#spark"/></svg><span>Join the pack</span><svg><use href="#spark"/></svg>
+      <span>Meow to the moon</span><svg><use href="#spark"/></svg><span>Live on BNB Chain</span><svg><use href="#spark"/></svg><span>100,000,000 ICAT</span><svg><use href="#spark"/></svg><span>3% buy · 3% sell</span><svg><use href="#spark"/></svg><span>Join the pack</span><svg><use href="#spark"/></svg>
+      <span>Meow to the moon</span><svg><use href="#spark"/></svg><span>Live on BNB Chain</span><svg><use href="#spark"/></svg><span>100,000,000 ICAT</span><svg><use href="#spark"/></svg><span>3% buy · 3% sell</span><svg><use href="#spark"/></svg><span>Join the pack</span><svg><use href="#spark"/></svg>
     </div></div>
   </div>
 
@@ -189,12 +195,18 @@
           <div class="stat stat--wide"><span class="stat__label">Total supply</span><span class="stat__value" data-count="100000000">100,000,000</span><span class="stat__unit">ICAT</span></div>
           <div class="stat"><span class="stat__label">Buy tax</span><span class="stat__value"><span data-count="3">3</span>%</span></div>
           <div class="stat"><span class="stat__label">Sell tax</span><span class="stat__value"><span data-count="3">3</span>%</span></div>
-          <div class="stat stat--wide stat--ticker"><span class="stat__label">Ticker</span><span class="stat__value">$ICAT</span></div>
+          <div class="stat"><span class="stat__label">Ticker</span><span class="stat__value">$ICAT</span></div>
+          <div class="stat stat--chain"><span class="stat__label">Network</span><span class="stat__value"><svg><use href="#bnb"/></svg>BSC</span></div>
         </div>
       </div>
       <button class="ca ca--block reveal" type="button" data-copy aria-label="Copy contract address">
         <span class="ca__label">Contract</span><span class="ca__addr" data-ca></span><span class="ca__act">Copy</span>
       </button>
+      <div class="links-row reveal">
+        <a class="btn btn--gold magnetic" data-link="buy" href="https://pancakeswap.finance/swap?chain=bsc&amp;outputCurrency=0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF">Buy on PancakeSwap</a>
+        <a class="btn btn--ghost magnetic" data-link="chart" href="https://dexscreener.com/bsc/0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF">Live chart</a>
+        <a class="btn btn--ghost magnetic" data-link="explorer" href="https://bscscan.com/token/0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF">View on BscScan</a>
+      </div>
       <p class="fine reveal">No allocations, vesting, burn schedules or tax-wallet splits have been confirmed, so none are listed. They will be published only once verified on-chain.</p>
       <h3 class="h3 reveal">What $ICAT is for</h3>
       <ul class="utility" data-stagger>
@@ -214,16 +226,17 @@
         <div>
           <p class="eyebrow eyebrow--dark reveal">How to buy</p>
           <h2 class="h2 reveal" data-split-words>Get $ICAT in four steps</h2>
+          <a class="btn btn--gold magnetic buy__cta reveal" data-link="buy" href="https://pancakeswap.finance/swap?chain=bsc&amp;outputCurrency=0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF">Buy on PancakeSwap</a>
         </div>
         <img class="buy__cat" src="assets/img/cat-wallet.webp" alt="Innocent Cat showing a crypto wallet app on a phone" width="1200" height="1200" loading="lazy" data-float>
       </div>
       <div class="steps-wrap">
         <svg class="steps-line" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true"><path d="M10 20 C 200 -10, 300 50, 500 20 S 800 -10, 990 20"/></svg>
         <ol class="steps" data-stagger>
-          <li><span class="steps__n">1</span><h3>Set up a wallet</h3><p>Download MetaMask, Trust Wallet or another wallet from the App Store or Google Play.</p></li>
-          <li><span class="steps__n">2</span><h3>Add funds</h3><p>Buy the network's coin on an exchange and send it to your wallet to pay for the swap and fees.</p></li>
-          <li><span class="steps__n">3</span><h3>Swap for $ICAT</h3><p>Open a DEX in your wallet's browser, connect, and paste the official contract address. Set slippage a little above 3% to cover the buy tax.</p></li>
-          <li><span class="steps__n">4</span><h3>Verify first</h3><p>Only use the address published here and in our Telegram. Check it on the block explorer before you buy.</p></li>
+          <li><span class="steps__n">1</span><h3>Set up a wallet</h3><p>Download MetaMask or Trust Wallet from the App Store or Google Play and switch it to BNB Smart Chain (BSC).</p></li>
+          <li><span class="steps__n">2</span><h3>Get some BNB</h3><p>Buy BNB on an exchange such as Binance and withdraw it to your wallet on the BEP-20 (BSC) network. Keep a little extra for gas.</p></li>
+          <li><span class="steps__n">3</span><h3>Swap on PancakeSwap</h3><p>Tap <a data-link="buy" href="https://pancakeswap.finance/swap?chain=bsc&amp;outputCurrency=0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF">Buy on PancakeSwap</a>: $ICAT is already filled in. Connect your wallet, enter your BNB amount, set slippage to about 4% to cover the 3% buy tax, and confirm.</p></li>
+          <li><span class="steps__n">4</span><h3>Verify first</h3><p>Check that the token address on PancakeSwap matches the official CA published here and in our Telegram, or look it up on <a data-link="explorer" href="https://bscscan.com/token/0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF">BscScan</a>.</p></li>
         </ol>
       </div>
     </div>
@@ -292,7 +305,16 @@
 <footer class="footer">
   <div class="wrap footer__inner">
     <a href="#top" class="nav__brand"><img src="assets/img/logo.png" alt="" width="44" height="49"><span>Innocent Cat</span></a>
-    <p>Innocence with a Purpose.<br>© 2026 Innocent Cat Community.</p>
+    <div class="footer__mid">
+      <p>Innocence with a Purpose.<br>© 2026 Innocent Cat Community.</p>
+      <nav class="footer__links" aria-label="Token links">
+        <a data-link="buy" href="https://pancakeswap.finance/swap?chain=bsc&amp;outputCurrency=0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF">PancakeSwap</a>
+        <a data-link="chart" href="https://dexscreener.com/bsc/0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF">DexScreener</a>
+        <a data-link="explorer" href="https://bscscan.com/token/0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF">BscScan</a>
+        <a href="https://t.me/inncat" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://x.com/Innocentcat224" target="_blank" rel="noopener">X</a>
+      </nav>
+    </div>
     <p class="footer__fine">This site is a project information page. It is not financial advice. Always verify the contract address yourself before buying.</p>
   </div>
 </footer>

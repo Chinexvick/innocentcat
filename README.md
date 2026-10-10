@@ -15,12 +15,15 @@ A community-driven cat token built around innocence, community, and a long-term 
 | Buy tax          | 3%                                           |
 | Sell tax         | 3%                                           |
 | Contract address | `0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF` |
-| Network          | EVM-style address; chain not yet confirmed   |
+| Network          | BNB Smart Chain (BSC)                        |
 
 ## Official links
 
 - X (Twitter): https://x.com/Innocentcat224
 - Telegram: https://t.me/inncat
+- Buy: https://pancakeswap.finance/swap?chain=bsc&outputCurrency=0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF
+- Chart: https://dexscreener.com/bsc/0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF
+- Explorer: https://bscscan.com/token/0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF
 
 ## Website
 
@@ -28,7 +31,7 @@ Static site, no build step: `index.html`, `styles.css`, `app.js`. Live at https:
 
 - Design: black-and-gold badge look from the logo, alternating with cream, sky and starry-night panels.
 - Motion (`app.js`): GSAP + ScrollTrigger and Lenis smooth scroll, loaded from cdnjs/unpkg. Panels rise in as cards and unfold while scrolling, hero intro and parallax, scroll-speed marquee ribbons, counters, a pinned roadmap where the rocket cat flies across the phases (vertical on phones), and a confetti burst on the community section. Everything is skipped for visitors who prefer reduced motion.
-- The contract address and Buy link are set once in the `ICAT` object at the top of `app.js`.
+- The contract address is set once in the `ICAT` object at the top of `app.js`; the PancakeSwap, DexScreener and BscScan links are built from it. Any `<a data-link="buy|chart|explorer">` gets the matching URL.
 - Artwork: generated with Higgsfield from the logo. `assets/remote-images.json` lists the source URLs; the `Fetch generated images` GitHub Action downloads them, converts them to WebP and commits them to `assets/img/`. To add art, add an entry there and push.
 
 ## Project materials
