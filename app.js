@@ -151,7 +151,8 @@
   const ready = new Promise((res) => {
     if (document.readyState === "complete") res();
     else addEventListener("load", res);
-    setTimeout(res, 2200);
+    // never hold the page behind the loader for long (helps LCP on slow connections)
+    setTimeout(res, 900);
   });
 
   const hasGsap = window.gsap && window.ScrollTrigger;

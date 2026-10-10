@@ -3,13 +3,72 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Innocent Cat ($ICAT)</title>
-<meta name="description" content="Innocent Cat ($ICAT): a community-driven cat token built around innocence, compassion and a long-term vision for charitable impact.">
+<title>Innocent Cat ($ICAT) | Community Cat Token on BNB Chain</title>
+<meta name="description" content="Innocent Cat ($ICAT) is a community cat token on BNB Chain with a charity heart: 100M supply, 3% buy and sell tax, and a mission to help orphanages.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://innocentcat.vercel.app/">
 <meta name="theme-color" content="#12100c">
-<meta property="og:title" content="Innocent Cat ($ICAT)">
-<meta property="og:description" content="Innocence with a Purpose. A community cat token on BNB Chain with a charity heart.">
-<meta property="og:image" content="assets/img/cat-hero.webp">
-<link rel="icon" href="assets/img/logo.png">
+
+<!-- social previews -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Innocent Cat">
+<meta property="og:url" content="https://innocentcat.vercel.app/">
+<meta property="og:title" content="Innocent Cat ($ICAT) | Innocence with a Purpose">
+<meta property="og:description" content="The community cat token on BNB Chain with a charity heart. Buy $ICAT on PancakeSwap and join the pack.">
+<meta property="og:image" content="https://innocentcat.vercel.app/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Innocent Cat, a white kitten in a cap and hoodie wearing a gold crown, sitting on gold paw coins">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@Innocentcat224">
+<meta name="twitter:title" content="Innocent Cat ($ICAT) | Innocence with a Purpose">
+<meta name="twitter:description" content="The community cat token on BNB Chain with a charity heart. Buy $ICAT on PancakeSwap and join the pack.">
+<meta name="twitter:image" content="https://innocentcat.vercel.app/og-image.jpg">
+
+<!-- icons -->
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="preload" as="image" href="assets/img/cat-hero.webp" type="image/webp" fetchpriority="high">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://innocentcat.vercel.app/#org",
+      "name": "Innocent Cat",
+      "alternateName": "$ICAT",
+      "url": "https://innocentcat.vercel.app/",
+      "logo": "https://innocentcat.vercel.app/assets/img/icon-512.png",
+      "description": "A community-driven cat token on BNB Chain built around innocence, compassion and a long-term vision for charitable impact.",
+      "slogan": "Innocence with a Purpose.",
+      "sameAs": ["https://x.com/Innocentcat224", "https://t.me/inncat"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://innocentcat.vercel.app/#website",
+      "url": "https://innocentcat.vercel.app/",
+      "name": "Innocent Cat ($ICAT)",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://innocentcat.vercel.app/#org" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://innocentcat.vercel.app/#webpage",
+      "url": "https://innocentcat.vercel.app/",
+      "name": "Innocent Cat ($ICAT) | Community Cat Token on BNB Chain",
+      "isPartOf": { "@id": "https://innocentcat.vercel.app/#website" },
+      "about": { "@id": "https://innocentcat.vercel.app/#org" },
+      "primaryImageOfPage": "https://innocentcat.vercel.app/og-image.jpg"
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:wght@500;600;700;800;900&family=Permanent+Marker&display=swap" rel="stylesheet">
@@ -39,14 +98,14 @@
 <!-- preloader -->
 <div class="loader" aria-hidden="true">
   <div class="loader__paws"><svg><use href="#paw"/></svg><svg><use href="#paw"/></svg><svg><use href="#paw"/></svg></div>
-  <img src="assets/img/logo.png" alt="" width="120" height="134">
+  <img src="assets/img/logo.webp" alt="" width="120" height="134">
 </div>
 
 <div class="progress" aria-hidden="true"><span></span></div>
 <div class="cursor-glow" aria-hidden="true"></div>
 
 <header class="nav">
-  <a href="#top" class="nav__brand"><img src="assets/img/logo.png" alt="" width="44" height="49"><span>Innocent Cat</span></a>
+  <a href="#top" class="nav__brand" aria-label="Innocent Cat, back to top"><img src="assets/img/logo.webp" alt="Innocent Cat logo" width="44" height="49"><span>Innocent Cat</span></a>
   <nav class="nav__links" aria-label="Sections">
     <a href="#story">Story</a>
     <a href="#charity">Charity</a>
@@ -58,6 +117,7 @@
 </header>
 
 <main id="top">
+
 
   <!-- HERO -->
   <section class="hero" data-hero>
@@ -129,6 +189,7 @@
   <!-- MISSION / VISION / WAY -->
   <section class="panel panel--cream">
     <div class="wrap">
+      <h2 class="sr-only">Mission and vision</h2>
       <div class="mv">
         <article class="mv__card reveal">
           <svg class="mv__icon"><use href="#paw"/></svg>
@@ -304,9 +365,16 @@
 
 <footer class="footer">
   <div class="wrap footer__inner">
-    <a href="#top" class="nav__brand"><img src="assets/img/logo.png" alt="" width="44" height="49"><span>Innocent Cat</span></a>
+    <a href="#top" class="nav__brand" aria-label="Innocent Cat, back to top"><img src="assets/img/logo.webp" alt="Innocent Cat logo" width="44" height="49"><span>Innocent Cat</span></a>
     <div class="footer__mid">
       <p>Innocence with a Purpose.<br>© 2026 Innocent Cat Community.</p>
+      <nav class="footer__links" aria-label="Sections">
+        <a href="#story">Story</a>
+        <a href="#charity">Charity</a>
+        <a href="#tokenomics">Tokenomics</a>
+        <a href="#how-to-buy">How to buy</a>
+        <a href="#roadmap">Roadmap</a>
+      </nav>
       <nav class="footer__links" aria-label="Token links">
         <a data-link="buy" href="https://pancakeswap.finance/swap?chain=bsc&amp;outputCurrency=0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF">PancakeSwap</a>
         <a data-link="chart" href="https://dexscreener.com/bsc/0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF">DexScreener</a>

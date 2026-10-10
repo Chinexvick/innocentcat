@@ -34,6 +34,15 @@ Static site, no build step: `index.html`, `styles.css`, `app.js`. Live at https:
 - The contract address is set once in the `ICAT` object at the top of `app.js`; the PancakeSwap, DexScreener and BscScan links are built from it. Any `<a data-link="buy|chart|explorer">` gets the matching URL.
 - Artwork: generated with Higgsfield from the logo. `assets/remote-images.json` lists the source URLs; the `Fetch generated images` GitHub Action downloads them, converts them to WebP and commits them to `assets/img/`. To add art, add an entry there and push.
 
+## SEO and sharing
+
+- Title, meta description, canonical URL and `robots` meta (indexable) in `index.html`.
+- Social preview: `og-image.jpg` (1200x630) with Open Graph and Twitter/X card tags.
+- Icons: `favicon.ico`, `apple-touch-icon.png`, `assets/img/icon-192.png` / `icon-512.png`, `site.webmanifest`.
+- Structured data: JSON-LD `Organization`, `WebSite` and `WebPage` in the `<head>`.
+- `robots.txt`, `sitemap.xml`, branded `404.html`, and `vercel.json` (clean URLs, HTTPS/HSTS and security headers, asset caching).
+- If the site moves to a custom domain, replace `https://innocentcat.vercel.app` in `index.html`, `robots.txt` and `sitemap.xml`.
+
 ## Project materials
 
 - `docs/innocent-cat-whitepaper.pdf`: white paper v1.0 (October 2026, 8 pages)
