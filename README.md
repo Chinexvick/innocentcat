@@ -24,11 +24,12 @@ A community-driven cat token built around innocence, community, and a long-term 
 
 ## Website
 
-`index.html` + `styles.css` is a static site (no build step). Open `index.html` in a browser, or deploy the folder to any static host.
+Static site, no build step: `index.html`, `styles.css`, `app.js`. Live at https://innocentcat.vercel.app (Vercel redeploys on every push).
 
-- Design: black-and-gold badge look taken from the logo. Paw-print patterns, halos, the ribbon and icons are drawn in CSS/SVG, so no background images are needed.
-- Image slots are marked with `<!-- IMAGE SLOT -->` comments in `index.html` (hero character, story image, community image). They show the logo until the real images arrive.
-- The contract address and the Buy link are set once in the `ICAT` object at the bottom of `index.html`.
+- Design: black-and-gold badge look from the logo, alternating with cream, sky and starry-night panels.
+- Motion (`app.js`): GSAP + ScrollTrigger and Lenis smooth scroll, loaded from cdnjs/unpkg. Panels rise in as cards and unfold while scrolling, hero intro and parallax, scroll-speed marquee ribbons, counters, a pinned roadmap where the rocket cat flies across the phases (vertical on phones), and a confetti burst on the community section. Everything is skipped for visitors who prefer reduced motion.
+- The contract address and Buy link are set once in the `ICAT` object at the top of `app.js`.
+- Artwork: generated with Higgsfield from the logo. `assets/remote-images.json` lists the source URLs; the `Fetch generated images` GitHub Action downloads them, converts them to WebP and commits them to `assets/img/`. To add art, add an entry there and push.
 
 ## Project materials
 

@@ -5,10 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Innocent Cat ($ICAT)</title>
 <meta name="description" content="Innocent Cat ($ICAT): a community-driven cat token built around innocence, compassion and a long-term vision for charitable impact.">
+<meta name="theme-color" content="#12100c">
+<meta property="og:title" content="Innocent Cat ($ICAT)">
+<meta property="og:description" content="Innocence with a Purpose. A community cat token with a charity heart.">
+<meta property="og:image" content="assets/img/cat-hero.webp">
 <link rel="icon" href="assets/img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:wght@500;600;700;800&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:wght@500;600;700;800;900&family=Permanent+Marker&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,8 +30,19 @@
       <path d="M4 40 8 10l14 16L32 4l10 22 14-16 4 30z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
     </symbol>
     <symbol id="spark" viewBox="0 0 24 24"><path d="M12 0c1 7 5 11 12 12-7 1-11 5-12 12-1-7-5-11-12-12 7-1 11-5 12-12z"/></symbol>
+    <symbol id="tg" viewBox="0 0 24 24"><path d="M21.5 4.2 2.9 11.4c-1.2.5-1.2 1.2-.2 1.5l4.7 1.5 1.8 5.6c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.3-2.2 4.7 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.3-1.5zM9.6 14.4l-.4 4-1.4-4.6 10.9-6.9-9.1 7.5z"/></symbol>
+    <symbol id="x" viewBox="0 0 24 24"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.3L5.3 21H2.2l7.2-8.3L1.9 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></symbol>
   </defs>
 </svg>
+
+<!-- preloader -->
+<div class="loader" aria-hidden="true">
+  <div class="loader__paws"><svg><use href="#paw"/></svg><svg><use href="#paw"/></svg><svg><use href="#paw"/></svg></div>
+  <img src="assets/img/logo.png" alt="" width="120" height="134">
+</div>
+
+<div class="progress" aria-hidden="true"><span></span></div>
+<div class="cursor-glow" aria-hidden="true"></div>
 
 <header class="nav">
   <a href="#top" class="nav__brand"><img src="assets/img/logo.png" alt="" width="44" height="49"><span>Innocent Cat</span></a>
@@ -35,130 +50,154 @@
     <a href="#story">Story</a>
     <a href="#charity">Charity</a>
     <a href="#tokenomics">Tokenomics</a>
-    <a href="#roadmap">Roadmap</a>
     <a href="#how-to-buy">How to buy</a>
+    <a href="#roadmap">Roadmap</a>
   </nav>
-  <a class="btn btn--gold btn--sm" data-buy-link href="#how-to-buy">Buy $ICAT</a>
+  <a class="btn btn--gold btn--sm magnetic" data-buy-link href="#how-to-buy">Buy $ICAT</a>
 </header>
 
 <main id="top">
+
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" data-hero>
+    <canvas class="dust" aria-hidden="true"></canvas>
     <div class="hero__paws" aria-hidden="true"></div>
     <div class="hero__inner">
-      <div class="hero__copy">
-        <p class="eyebrow"><svg class="ico"><use href="#crown"/></svg> $ICAT · Community token</p>
-        <h1 class="logotype"><span class="logotype__top">Innocent</span><span class="logotype__cat">Cat</span></h1>
-        <p class="hero__tag">Innocence with a Purpose.</p>
-        <p class="hero__lede">A community-driven cat token built around innocence, compassion and community, with a long-term vision for real charitable impact, starting with orphanages and people who need practical help.</p>
-        <div class="hero__ctas">
-          <a class="btn btn--gold" data-buy-link href="#how-to-buy">Buy $ICAT</a>
-          <a class="btn btn--ghost" href="https://t.me/inncat" target="_blank" rel="noopener">Join Telegram</a>
+      <div class="hero__copy" data-hero-copy>
+        <p class="eyebrow hero-in"><svg class="ico"><use href="#crown"/></svg> $ICAT · The community cat with a heart</p>
+        <h1 class="logotype">
+          <span class="logotype__top" data-split>Innocent</span>
+          <span class="logotype__cat hero-in">Cat</span>
+        </h1>
+        <p class="hero__tag hero-in">Innocence with a Purpose.</p>
+        <p class="hero__lede hero-in">A community-driven cat token built around innocence, compassion and community, with a long-term vision for real charitable impact, starting with orphanages and people who need practical help.</p>
+        <div class="hero__ctas hero-in">
+          <a class="btn btn--gold magnetic" data-buy-link href="#how-to-buy">Buy $ICAT</a>
+          <a class="btn btn--ghost magnetic" href="https://t.me/inncat" target="_blank" rel="noopener"><svg class="btn__ico"><use href="#tg"/></svg>Join Telegram</a>
         </div>
-        <button class="ca" type="button" data-copy aria-label="Copy contract address">
+        <button class="ca hero-in" type="button" data-copy aria-label="Copy contract address">
           <span class="ca__label">CA</span><span class="ca__addr" data-ca></span><span class="ca__act">Copy</span>
         </button>
       </div>
-      <div class="hero__art">
-        <div class="halo" aria-hidden="true"><i></i><i></i></div>
-        <!-- IMAGE SLOT: hero character -->
-        <img class="hero__img" src="assets/img/logo.png" alt="Innocent Cat mascot" width="340" height="379">
+      <div class="hero__art" data-hero-art>
+        <div class="halo" aria-hidden="true"><i></i><i></i><i></i></div>
+        <img class="hero__img" src="assets/img/cat-hero.webp" alt="Innocent Cat sitting on a pile of gold paw coins, wearing a crown" width="1200" height="1200" fetchpriority="high">
+        <span class="coin coin--1" aria-hidden="true"><svg><use href="#paw"/></svg></span>
+        <span class="coin coin--2" aria-hidden="true"><svg><use href="#paw"/></svg></span>
+        <span class="coin coin--3" aria-hidden="true"><svg><use href="#paw"/></svg></span>
         <svg class="float float--1" aria-hidden="true"><use href="#spark"/></svg>
         <svg class="float float--2" aria-hidden="true"><use href="#spark"/></svg>
-        <svg class="float float--3" aria-hidden="true"><use href="#paw"/></svg>
       </div>
     </div>
+    <a class="scroll-cue" href="#story" aria-label="Scroll to the story"><svg><use href="#paw"/></svg><span>Scroll</span></a>
   </section>
 
-  <div class="ribbon" aria-hidden="true"><div class="ribbon__track">
-    <span>Innocence with a purpose</span><svg><use href="#paw"/></svg><span>$ICAT</span><svg><use href="#paw"/></svg><span>Community first</span><svg><use href="#paw"/></svg><span>Charity at heart</span><svg><use href="#paw"/></svg>
-    <span>Innocence with a purpose</span><svg><use href="#paw"/></svg><span>$ICAT</span><svg><use href="#paw"/></svg><span>Community first</span><svg><use href="#paw"/></svg><span>Charity at heart</span><svg><use href="#paw"/></svg>
-  </div></div>
+  <div class="ribbons" aria-hidden="true">
+    <div class="ribbon ribbon--a"><div class="ribbon__track" data-marquee="1">
+      <span>Innocence with a purpose</span><svg><use href="#paw"/></svg><span>$ICAT</span><svg><use href="#paw"/></svg><span>Community first</span><svg><use href="#paw"/></svg><span>Charity at heart</span><svg><use href="#paw"/></svg>
+      <span>Innocence with a purpose</span><svg><use href="#paw"/></svg><span>$ICAT</span><svg><use href="#paw"/></svg><span>Community first</span><svg><use href="#paw"/></svg><span>Charity at heart</span><svg><use href="#paw"/></svg>
+    </div></div>
+    <div class="ribbon ribbon--b"><div class="ribbon__track" data-marquee="-1">
+      <span>Meow to the moon</span><svg><use href="#spark"/></svg><span>100,000,000 ICAT</span><svg><use href="#spark"/></svg><span>3% buy · 3% sell</span><svg><use href="#spark"/></svg><span>Join the pack</span><svg><use href="#spark"/></svg>
+      <span>Meow to the moon</span><svg><use href="#spark"/></svg><span>100,000,000 ICAT</span><svg><use href="#spark"/></svg><span>3% buy · 3% sell</span><svg><use href="#spark"/></svg><span>Join the pack</span><svg><use href="#spark"/></svg>
+    </div></div>
+  </div>
 
   <!-- STORY -->
-  <section id="story" class="section section--cream">
+  <section id="story" class="panel panel--night">
+    <div class="stars" aria-hidden="true"></div>
     <div class="wrap story">
-      <figure class="polaroid">
-        <!-- IMAGE SLOT: story image -->
-        <div class="polaroid__img"><img src="assets/img/logo.png" alt="Innocent Cat" width="340" height="379"></div>
-        <figcaption>Where it all began</figcaption>
+      <figure class="story__frame reveal">
+        <div class="story__img"><img src="assets/img/cat-story.webp" alt="The kitten sitting alone on stone steps at night, looking up at a bright star" width="960" height="1200" loading="lazy" data-parallax="-8"></div>
       </figure>
       <div class="story__copy">
-        <p class="eyebrow eyebrow--dark">The Innocent Cat story</p>
-        <h2 class="h2">Born from resilience</h2>
-        <p>Innocent Cat is inspired by a personal story. Its developer grew up without a father or mother and chose to build something that could one day become a way of helping others.</p>
-        <p>The name stands for vulnerability, simplicity and kindness, and for the idea that people who have known hardship can still create something meaningful for others. Charity is part of who we are, not a short-term campaign.</p>
-        <blockquote>“From an innocent beginning to a community with a purpose.”</blockquote>
+        <p class="eyebrow reveal">Chapter one · The Innocent Cat story</p>
+        <h2 class="h2 h2--light reveal" data-split-words>Born from resilience</h2>
+        <p class="reveal">Innocent Cat is inspired by a personal story. Its developer grew up without a father or mother and chose to build something that could one day become a way of helping others.</p>
+        <p class="reveal">The name stands for vulnerability, simplicity and kindness, and for the idea that people who have known hardship can still create something meaningful for others. Charity is part of who we are, not a short-term campaign.</p>
+        <blockquote class="reveal"><span data-highlight>“From an innocent beginning to a community with a purpose.”</span></blockquote>
       </div>
     </div>
   </section>
 
-  <!-- MISSION / VISION -->
-  <section class="section section--dark">
+  <!-- MISSION / VISION / WAY -->
+  <section class="panel panel--cream">
     <div class="wrap">
       <div class="mv">
-        <article class="mv__card">
+        <article class="mv__card reveal">
           <svg class="mv__icon"><use href="#paw"/></svg>
           <h3>Our mission</h3>
           <p>To build a recognizable, engaged community around Innocent Cat while creating a credible path toward real-world charitable impact.</p>
         </article>
-        <article class="mv__card">
+        <article class="mv__card mv__card--gold reveal">
           <svg class="mv__icon mv__icon--crown"><use href="#crown"/></svg>
           <h3>Our vision</h3>
           <p>A community-led ecosystem where the token, the brand and future initiatives connect people, creativity and charitable action.</p>
         </article>
       </div>
-
-      <div class="approach">
-        <h2 class="h2 h2--light">The Innocent Cat way</h2>
-        <ul class="pillars">
-          <li><strong>Community first</strong><span>An active, respectful and engaged community around the Innocent Cat identity.</span></li>
-          <li><strong>Transparency</strong><span>Token parameters, project news and major decisions communicated clearly.</span></li>
-          <li><strong>Long-term building</strong><span>Sustainable initiatives over short-term market hype.</span></li>
-          <li><strong>Social impact</strong><span>Practical charity that grows as resources and capacity grow.</span></li>
-          <li><strong>Honest talk</strong><span>No guaranteed-return claims. Make your own informed decisions.</span></li>
+      <div class="way">
+        <h2 class="h2 reveal" data-split-words>The Innocent Cat way</h2>
+        <ul class="pillars" data-stagger>
+          <li><span class="pillars__paw"><svg><use href="#paw"/></svg></span><strong>Community first</strong><span>An active, respectful and engaged community around the Innocent Cat identity.</span></li>
+          <li><span class="pillars__paw"><svg><use href="#paw"/></svg></span><strong>Transparency</strong><span>Token parameters, project news and major decisions communicated clearly.</span></li>
+          <li><span class="pillars__paw"><svg><use href="#paw"/></svg></span><strong>Long-term building</strong><span>Sustainable initiatives over short-term market hype.</span></li>
+          <li><span class="pillars__paw"><svg><use href="#paw"/></svg></span><strong>Social impact</strong><span>Practical charity that grows as resources and capacity grow.</span></li>
+          <li><span class="pillars__paw"><svg><use href="#paw"/></svg></span><strong>Honest talk</strong><span>No guaranteed-return claims. Make your own informed decisions.</span></li>
         </ul>
       </div>
     </div>
   </section>
 
   <!-- CHARITY -->
-  <section id="charity" class="section section--sky">
+  <section id="charity" class="panel panel--sky">
+    <div class="bubbles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
     <div class="wrap charity">
       <div class="charity__copy">
-        <p class="eyebrow eyebrow--dark">Charity &amp; social impact</p>
-        <h2 class="h2">Orphanages and vulnerable people at the centre</h2>
-        <p>Charity is one of the defining long-term goals of Innocent Cat. As the community grows, we aim to turn that growth into visible, accountable help, shared with records and proof of completed initiatives where privacy and safeguarding allow.</p>
-        <p class="note">No fixed share of the token tax is assigned to charity yet. Future charity funding is a project goal, not an automatic entitlement of holders.</p>
+        <p class="eyebrow eyebrow--dark reveal">Charity &amp; social impact</p>
+        <h2 class="h2 reveal" data-split-words>Orphanages and vulnerable people at the centre</h2>
+        <p class="reveal">Charity is one of the defining long-term goals of Innocent Cat. As the community grows, we aim to turn that growth into visible, accountable help, shared with records and proof of completed initiatives where privacy and safeguarding allow.</p>
+        <ul class="giving" data-stagger>
+          <li><span class="giving__ico"><svg><use href="#paw"/></svg></span>Food and essential supplies</li>
+          <li><span class="giving__ico"><svg><use href="#paw"/></svg></span>Donations to orphanages</li>
+          <li><span class="giving__ico"><svg><use href="#paw"/></svg></span>Support for education</li>
+          <li><span class="giving__ico"><svg><use href="#paw"/></svg></span>Medical assistance</li>
+          <li><span class="giving__ico"><svg><use href="#paw"/></svg></span>Other practical help</li>
+        </ul>
+        <p class="note reveal">No fixed share of the token tax is assigned to charity yet. Future charity funding is a project goal, not an automatic entitlement of holders.</p>
       </div>
-      <ul class="giving">
-        <li><span class="giving__dot"></span>Donations to orphanages</li>
-        <li><span class="giving__dot"></span>Food and essential supplies</li>
-        <li><span class="giving__dot"></span>Support for education</li>
-        <li><span class="giving__dot"></span>Medical assistance</li>
-        <li><span class="giving__dot"></span>Other practical help</li>
-      </ul>
+      <div class="charity__art">
+        <div class="heart-ring" aria-hidden="true"></div>
+        <img src="assets/img/cat-charity.webp" alt="Innocent Cat carrying a basket of food, books, a teddy bear and a first-aid kit" width="1200" height="1200" loading="lazy" data-float>
+      </div>
     </div>
   </section>
 
   <!-- TOKENOMICS -->
-  <section id="tokenomics" class="section section--dark section--paws">
-    <div class="wrap">
-      <p class="eyebrow">Tokenomics</p>
-      <h2 class="h2 h2--light">Simple and transparent</h2>
-      <div class="stats">
-        <div class="stat stat--wide"><span class="stat__label">Total supply</span><span class="stat__value">100,000,000</span><span class="stat__unit">ICAT</span></div>
-        <div class="stat"><span class="stat__label">Buy tax</span><span class="stat__value">3%</span></div>
-        <div class="stat"><span class="stat__label">Sell tax</span><span class="stat__value">3%</span></div>
-        <div class="stat stat--ticker"><span class="stat__label">Ticker</span><span class="stat__value">$ICAT</span></div>
+  <section id="tokenomics" class="panel panel--dark">
+    <div class="hero__paws" aria-hidden="true"></div>
+    <div class="wrap tokenomics">
+      <div class="tokenomics__head">
+        <p class="eyebrow reveal">Tokenomics</p>
+        <h2 class="h2 h2--light reveal" data-split-words>Simple. Transparent. Purrfect.</h2>
       </div>
-      <button class="ca ca--block" type="button" data-copy aria-label="Copy contract address">
+      <div class="tokenomics__grid">
+        <div class="tokenomics__art">
+          <div class="coin-glow" aria-hidden="true"></div>
+          <img src="assets/img/cat-coin.webp" alt="Innocent Cat hugging a giant gold paw-print coin" width="1200" height="1200" loading="lazy" data-spin>
+        </div>
+        <div class="stats" data-stagger>
+          <div class="stat stat--wide"><span class="stat__label">Total supply</span><span class="stat__value" data-count="100000000">100,000,000</span><span class="stat__unit">ICAT</span></div>
+          <div class="stat"><span class="stat__label">Buy tax</span><span class="stat__value"><span data-count="3">3</span>%</span></div>
+          <div class="stat"><span class="stat__label">Sell tax</span><span class="stat__value"><span data-count="3">3</span>%</span></div>
+          <div class="stat stat--wide stat--ticker"><span class="stat__label">Ticker</span><span class="stat__value">$ICAT</span></div>
+        </div>
+      </div>
+      <button class="ca ca--block reveal" type="button" data-copy aria-label="Copy contract address">
         <span class="ca__label">Contract</span><span class="ca__addr" data-ca></span><span class="ca__act">Copy</span>
       </button>
-      <p class="fine">No allocations, vesting, burn schedules or tax-wallet splits have been confirmed, so none are listed. They will be published only once verified on-chain.</p>
-
-      <h3 class="h3">What $ICAT is for</h3>
-      <ul class="utility">
+      <p class="fine reveal">No allocations, vesting, burn schedules or tax-wallet splits have been confirmed, so none are listed. They will be published only once verified on-chain.</p>
+      <h3 class="h3 reveal">What $ICAT is for</h3>
+      <ul class="utility" data-stagger>
         <li>Community campaigns, events and contests</li>
         <li>Access to future Innocent Cat ecosystem activities</li>
         <li>Community-driven charity and fundraising</li>
@@ -169,41 +208,56 @@
   </section>
 
   <!-- HOW TO BUY -->
-  <section id="how-to-buy" class="section section--cream">
-    <div class="wrap">
-      <p class="eyebrow eyebrow--dark">How to buy</p>
-      <h2 class="h2">Get $ICAT in four steps</h2>
-      <ol class="steps">
-        <li><h3>Set up a wallet</h3><p>Download MetaMask, Trust Wallet or another wallet from the App Store or Google Play.</p></li>
-        <li><h3>Add funds</h3><p>Buy the network's coin on an exchange and send it to your wallet to pay for the swap and fees.</p></li>
-        <li><h3>Swap for $ICAT</h3><p>Open a DEX in your wallet's browser, connect, and paste the official contract address. Set slippage a little above 3% to cover the buy tax.</p></li>
-        <li><h3>Verify first</h3><p>Only use the address published here and in our Telegram. Check it on the block explorer before you buy.</p></li>
-      </ol>
+  <section id="how-to-buy" class="panel panel--cream">
+    <div class="wrap buy">
+      <div class="buy__head">
+        <div>
+          <p class="eyebrow eyebrow--dark reveal">How to buy</p>
+          <h2 class="h2 reveal" data-split-words>Get $ICAT in four steps</h2>
+        </div>
+        <img class="buy__cat" src="assets/img/cat-wallet.webp" alt="Innocent Cat showing a crypto wallet app on a phone" width="1200" height="1200" loading="lazy" data-float>
+      </div>
+      <div class="steps-wrap">
+        <svg class="steps-line" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true"><path d="M10 20 C 200 -10, 300 50, 500 20 S 800 -10, 990 20"/></svg>
+        <ol class="steps" data-stagger>
+          <li><span class="steps__n">1</span><h3>Set up a wallet</h3><p>Download MetaMask, Trust Wallet or another wallet from the App Store or Google Play.</p></li>
+          <li><span class="steps__n">2</span><h3>Add funds</h3><p>Buy the network's coin on an exchange and send it to your wallet to pay for the swap and fees.</p></li>
+          <li><span class="steps__n">3</span><h3>Swap for $ICAT</h3><p>Open a DEX in your wallet's browser, connect, and paste the official contract address. Set slippage a little above 3% to cover the buy tax.</p></li>
+          <li><span class="steps__n">4</span><h3>Verify first</h3><p>Only use the address published here and in our Telegram. Check it on the block explorer before you buy.</p></li>
+        </ol>
+      </div>
     </div>
   </section>
 
   <!-- ROADMAP -->
-  <section id="roadmap" class="section section--dark">
-    <div class="wrap">
-      <p class="eyebrow">Roadmap</p>
-      <h2 class="h2 h2--light">The journey ahead</h2>
-      <ol class="road">
-        <li><span class="road__phase">Phase 1</span><h3>Launch &amp; foundation</h3><p>Token launch, community formation, official branding, social channels and clear project information.</p></li>
-        <li><span class="road__phase">Phase 2</span><h3>Community growth</h3><p>Campaigns, content, X Spaces, partnerships and visibility initiatives.</p></li>
-        <li><span class="road__phase">Phase 3</span><h3>Ecosystem development</h3><p>Practical digital and community utilities, and new Innocent Cat initiatives.</p></li>
-        <li><span class="road__phase">Phase 4</span><h3>Charity activation</h3><p>Structured charitable initiatives, beginning with orphanage-focused support.</p></li>
-        <li><span class="road__phase">Phase 5</span><h3>Long-term expansion</h3><p>Scale the community, strengthen partnerships and expand social-impact programs.</p></li>
-      </ol>
-      <p class="fine">Dates and deliverables may change as the project develops.</p>
+  <section id="roadmap" class="panel panel--space" data-roadmap>
+    <div class="stars" aria-hidden="true"></div>
+    <div class="road-pin">
+      <div class="wrap road-head">
+        <p class="eyebrow reveal">Roadmap</p>
+        <h2 class="h2 h2--light reveal" data-split-words>The journey to the moon</h2>
+      </div>
+      <div class="road-stage">
+        <div class="road-line" aria-hidden="true"><span class="road-line__fill"></span></div>
+        <img class="road-rocket" src="assets/img/cat-rocket.webp" alt="" width="896" height="1200" loading="lazy" aria-hidden="true">
+        <ol class="road">
+          <li><span class="road__dot"></span><span class="road__phase">Phase 1</span><h3>Launch &amp; foundation</h3><p>Token launch, community formation, official branding, social channels and clear project information.</p></li>
+          <li><span class="road__dot"></span><span class="road__phase">Phase 2</span><h3>Community growth</h3><p>Campaigns, content, X Spaces, partnerships and visibility initiatives.</p></li>
+          <li><span class="road__dot"></span><span class="road__phase">Phase 3</span><h3>Ecosystem development</h3><p>Practical digital and community utilities, and new Innocent Cat initiatives.</p></li>
+          <li><span class="road__dot"></span><span class="road__phase">Phase 4</span><h3>Charity activation</h3><p>Structured charitable initiatives, beginning with orphanage-focused support.</p></li>
+          <li><span class="road__dot"></span><span class="road__phase">Phase 5</span><h3>Long-term expansion</h3><p>Scale the community, strengthen partnerships and expand social-impact programs.</p></li>
+        </ol>
+      </div>
+      <p class="wrap fine road-fine">Dates and deliverables may change as the project develops.</p>
     </div>
   </section>
 
   <!-- TRUST -->
-  <section class="section section--cream">
+  <section class="panel panel--cream">
     <div class="wrap trust">
       <div>
-        <h2 class="h3 h3--dark">Our transparency promises</h2>
-        <ul class="checks">
+        <h2 class="h2 reveal" data-split-words>Our transparency promises</h2>
+        <ul class="checks" data-stagger>
           <li>One official contract address, clearly published</li>
           <li>Material project changes disclosed</li>
           <li>Contract and liquidity information open to verification</li>
@@ -212,27 +266,24 @@
           <li>Public updates on charity work and major developments</li>
         </ul>
       </div>
-      <div class="risk">
-        <h2 class="h3 h3--dark">Know the risks</h2>
+      <div class="risk reveal">
+        <h3 class="h3 h3--dark">Know the risks</h3>
         <p>Digital assets are highly volatile and can lose some or all of their value. Risks include low liquidity, smart-contract bugs, regulatory change, cybersecurity incidents and the chance that planned initiatives are not delivered.</p>
         <p>Nothing on this site is financial advice, a guarantee of returns, or a promise that any roadmap milestone will be completed.</p>
       </div>
     </div>
   </section>
 
-  <!-- COMMUNITY -->
-  <section class="join">
-    <div class="hero__paws" aria-hidden="true"></div>
+  <!-- JOIN -->
+  <section class="panel panel--gold-night join" data-join>
+    <canvas class="confetti" aria-hidden="true"></canvas>
     <div class="wrap join__inner">
-      <!-- IMAGE SLOT: community image -->
-      <img class="join__img" src="assets/img/logo.png" alt="" width="340" height="379" aria-hidden="true">
-      <div>
-        <h2 class="logotype logotype--sm"><span class="logotype__top">Join the</span><span class="logotype__cat">Innocent pack</span></h2>
-        <p>Innocent Cat grows through its people. Come say hi, help shape what we build, and be part of turning a community into real help.</p>
-        <div class="socials">
-          <a href="https://t.me/inncat" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 4.2 2.9 11.4c-1.2.5-1.2 1.2-.2 1.5l4.7 1.5 1.8 5.6c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.3-2.2 4.7 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.3-1.5zM9.6 14.4l-.4 4-1.4-4.6 10.9-6.9-9.1 7.5z"/></svg>Telegram</a>
-          <a href="https://x.com/Innocentcat224" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.3L5.3 21H2.2l7.2-8.3L1.9 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></svg>@Innocentcat224</a>
-        </div>
+      <h2 class="logotype logotype--sm reveal"><span class="logotype__top">Join the</span><span class="logotype__cat">Innocent pack</span></h2>
+      <p class="reveal">Innocent Cat grows through its people. Come say hi, help shape what we build, and be part of turning a community into real help.</p>
+      <img class="join__img" src="assets/img/cat-pack.webp" alt="Five happy kittens in hoodies cheering together, with Innocent Cat in the middle" width="1200" height="797" loading="lazy">
+      <div class="socials reveal">
+        <a class="magnetic" href="https://t.me/inncat" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#tg"/></svg>Telegram</a>
+        <a class="magnetic" href="https://x.com/Innocentcat224" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#x"/></svg>@Innocentcat224</a>
       </div>
     </div>
   </section>
@@ -246,32 +297,9 @@
   </div>
 </footer>
 
-<script>
-  // Project settings: change these in one place once the chain and buy link are confirmed.
-  const ICAT = {
-    contract: "0x6AA64e5215Fc7a9182f26d5c55C21Ce0863049fF",
-    buyUrl: "#how-to-buy",
-  };
-
-  document.querySelectorAll("[data-ca]").forEach((el) => (el.textContent = ICAT.contract));
-  document.querySelectorAll("[data-buy-link]").forEach((a) => (a.href = ICAT.buyUrl));
-
-  document.querySelectorAll("[data-copy]").forEach((btn) =>
-    btn.addEventListener("click", async () => {
-      const label = btn.querySelector(".ca__act");
-      try {
-        await navigator.clipboard.writeText(ICAT.contract);
-        label.textContent = "Copied!";
-      } catch {
-        const range = document.createRange();
-        range.selectNodeContents(btn.querySelector(".ca__addr"));
-        getSelection().removeAllRanges();
-        getSelection().addRange(range);
-        label.textContent = "Selected";
-      }
-      setTimeout(() => (label.textContent = "Copy"), 1600);
-    })
-  );
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="app.js" defer></script>
 </body>
 </html>
