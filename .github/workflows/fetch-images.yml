@@ -1,0 +1,45 @@
+name: Fetch generated images
+
+# Downloads every image listed in assets/remote-images.json, converts it to a
+# web-sized WebP (max 1200px, alpha kept) and commits the result.
+on:
+  push:
+    paths:
+      - assets/remote-images.json
+      - .github/workflows/fetch-images.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install --quiet pillow
+      - name: Download and convert
+        run: |
+          python3 - <<'PY'
+          import io, json, urllib.request
+          from pathlib import Path
+          from PIL import Image
+          for out, url in json.load(open("assets/remote-images.json")).items():
+              out = Path(out)
+              if out.exists():
+                  continue
+              data = urllib.request.urlopen(url, timeout=60).read()
+              im = Image.open(io.BytesIO(data))
+              im.thumbnail((1200, 1200), Image.LANCZOS)
+              out.parent.mkdir(parents=True, exist_ok=True)
+              im.save(out, "WEBP", quality=84, method=6)
+              print(f"{out}: {im.size} {out.stat().st_size // 1024} KB")
+          PY
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898237+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          git diff --cached --quiet && exit 0
+          git commit -m "Add generated images as WebP"
+          git push
