@@ -27,7 +27,7 @@ A community-driven cat token built around innocence, community, and a long-term 
 
 ## Website
 
-Static site, no build step: `index.html`, `styles.css`, `app.js`. Live at https://innocentcat.vercel.app (Vercel redeploys on every push).
+Static site, no build step: `index.html`, `styles.css`, `app.js`. Live at https://www.innocentcat.pro (Vercel redeploys on every push; innocentcat.pro and innocentcat.vercel.app redirect there).
 
 - Design: black-and-gold badge look from the logo, alternating with cream, sky and starry-night panels.
 - Motion (`app.js`): GSAP + ScrollTrigger and Lenis smooth scroll, loaded from cdnjs/unpkg. Panels rise in as cards and unfold while scrolling, hero intro and parallax, scroll-speed marquee ribbons, counters, a pinned roadmap where the rocket cat flies across the phases (vertical on phones), and a confetti burst on the community section. Everything is skipped for visitors who prefer reduced motion.
@@ -41,7 +41,7 @@ Static site, no build step: `index.html`, `styles.css`, `app.js`. Live at https:
 - Icons: `favicon.ico`, `apple-touch-icon.png`, `assets/img/icon-192.png` / `icon-512.png`, `site.webmanifest`.
 - Structured data: JSON-LD `Organization`, `WebSite` and `WebPage` in the `<head>`.
 - `robots.txt`, `sitemap.xml`, branded `404.html`, and `vercel.json` (clean URLs, HTTPS/HSTS and security headers, asset caching).
-- If the site moves to a custom domain, replace `https://innocentcat.vercel.app` in `index.html`, `robots.txt` and `sitemap.xml`.
+- Canonical domain is `https://www.innocentcat.pro`; if it ever changes, update `index.html`, `robots.txt`, `sitemap.xml` and the redirect in `vercel.json`.
 
 ## Project materials
 
